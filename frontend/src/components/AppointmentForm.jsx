@@ -35,7 +35,7 @@ const AppointmentForm = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       const { data } = await axios.get(
-        "https://mern-stack-hospital-management-system-q3hr.onrender.com/api/v1/user/doctors",
+        "https://mern-stack-hospital-management-system-61cw.onrender.com/api/v1/user/doctors",
         { withCredentials: true }
       );
       setDoctors(data.doctors);
@@ -48,7 +48,7 @@ const AppointmentForm = () => {
     try {
       const hasVisitedBool = Boolean(hasVisited);
       const { data } = await axios.post(
-        "https://mern-stack-hospital-management-system-q3hr.onrender.com/api/v1/appointment/post",
+        "https://mern-stack-hospital-management-system-61cw.onrender.com/api/v1/appointment/post",
         {
           firstName,
           lastName,
