@@ -59,7 +59,7 @@ const AddNewDoctor = () => {
       formData.append("docAvatar", docAvatar);
       await axios
         .post(
-          "https://mern-stack-hospital-management-system-q3hr.onrender.com/api/v1/user/doctor/addnew",
+          "https://mern-stack-hospital-management-system-61cw.onrender.com/api/v1/user/doctor/addnew",
           formData,
           {
             withCredentials: true,
