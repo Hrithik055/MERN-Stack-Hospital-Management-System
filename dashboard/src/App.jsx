@@ -26,7 +26,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://mern-stack-hospital-management-system-q3hr.onrender.com/api/v1/user/admin/me",
+          "https://mern-stack-hospital-management-system-61cw.onrender.com/api/v1/user/admin/me",
           {
             withCredentials: true,
           }
