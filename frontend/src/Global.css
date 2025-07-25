@@ -101,7 +101,7 @@ body {
   color: #2563eb;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 100px) {
   .header .login-section {
     display: flex;
   }
@@ -141,7 +141,7 @@ body {
     z-index: 2;
     transition: 0.3s;
     position: fixed;
-    left: 0;
+    left: -100%;
     height: 100%;
     width: 400px;
     background: #ffffffbf;
@@ -155,7 +155,7 @@ body {
     z-index: 2;
     transition: 0.3s;
     position: fixed;
-    left: -100%;
+    left: 0%;
     width: 400px;
     height: 100%;
     background: #ffffffbf;
@@ -169,19 +169,6 @@ body {
     font-weight: 700;
     color: #000;
     font-size: 18px;
-  }
-}
-
-@media (max-width: 800px) {
-  .header .showmenu {
-    width: 96vw;
-  }
-}
-@media (max-width: 650px) {
-  .header .showmenu {
-    margin: 0;
-    width: 100%;
-    border-radius: 0;
   }
 }
 
@@ -253,7 +240,7 @@ body {
 
 @media (max-width: 640px) {
   .hero .hero-img {
-    width: 450px;
+    width: 400px;
     height: 400px;
   }
 }
@@ -2050,7 +2037,7 @@ select:focus {
 }
 @media (max-width: 640px) {
   .about-page img {
-    width: 450px;
+    width: 400px;
     height: 400px;
   }
 }
