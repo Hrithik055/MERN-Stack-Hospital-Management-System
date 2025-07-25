@@ -44,62 +44,62 @@ const Navbar = () => {
               <Heart className="logo-icon-Medicare" />
               <span className="logo-text">MediCare Hospital</span>
             </div>
-            <nav className="nav">
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "nav-link active" : "nav-link"
-                }
-                to={"/"}
-                onClick={() => setShow(!show)}
-              >
-                Home
-              </NavLink>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "nav-link active" : "nav-link"
-                }
-                to="/services"
-                onClick={() => setShow(!show)}
-              >
-                Services
-              </NavLink>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "nav-link active" : "nav-link"
-                }
-                to={"/doctors"}
-                onClick={() => setShow(!show)}
-              >
-                Doctors
-              </NavLink>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "nav-link active" : "nav-link"
-                }
-                to={"/appointment"}
-                onClick={() => setShow(!show)}
-              >
-                Appointments
-              </NavLink>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "nav-link active" : "nav-link"
-                }
-                to={"/about"}
-                onClick={() => setShow(!show)}
-              >
-                About
-              </NavLink>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "nav-link active" : "nav-link"
-                }
-                to={"/contact"}
-                onClick={() => setShow(!show)}
-              >
-                Contact
-              </NavLink>
-              <div className="header-actions">
+            <div className={show ? "navLinks showmenu" : "navLinks"}>
+              <nav className="nav">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                  to={"/"}
+                  onClick={() => setShow(!show)}
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                  to="/services"
+                  onClick={() => setShow(!show)}
+                >
+                  Services
+                </NavLink>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                  to={"/doctors"}
+                  onClick={() => setShow(!show)}
+                >
+                  Doctors
+                </NavLink>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                  to={"/appointment"}
+                  onClick={() => setShow(!show)}
+                >
+                  Appointments
+                </NavLink>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                  to={"/about"}
+                  onClick={() => setShow(!show)}
+                >
+                  About
+                </NavLink>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                  to={"/contact"}
+                  onClick={() => setShow(!show)}
+                >
+                  Contact
+                </NavLink>
                 <div className="login-section">
                   <User className="login-icon" />
                   {/* <span className="login-text">NameABC</span> */}
@@ -114,14 +114,16 @@ const Navbar = () => {
                     </span>
                   )}
                 </div>
-              </div>
-              {/* <div className="hamburger" onClick={() => setShow(!show)}>
-          <GiHamburgerMenu />
-        </div> */}
-              <button asChild className="btn-Appointment">
-                <a href="/appointment">Book Appointment</a>
-              </button>
-            </nav>
+                {/* </div> */}
+
+                <button asChild className="btn-Appointment">
+                  <a href="/appointment">Book Appointment</a>
+                </button>
+              </nav>
+            </div>
+            <div className="hamburger" onClick={() => setShow(!show)}>
+              <GiHamburgerMenu />
+            </div>
           </div>
         </div>
       </header>
